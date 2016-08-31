@@ -4,10 +4,9 @@ This follows a simple HTTP Patch mechanism, same as the way google does it.
 It uses the following
 * spring-boot with json(jackson) response
 * swagger for viewing
-* h2 db
----
+* in memory database(h2)
 ## PATCH Example
-The following describes how the HTTP Patch
+The following describes the and example flow on the HTTP Patch implemented here
 ### Current JSON Model
 ```
 {
@@ -63,7 +62,7 @@ curl -X PATCH -H "Content-Type: application/json" -d '{
 }
 ```
 ---
-### Usage
+## Usage
 1. Controller methods for PATCH should be annotated with @Patch where you can specify
     * id - type of id the entity used
     * service - bean service class that retrieves the entity.

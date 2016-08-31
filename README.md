@@ -5,8 +5,9 @@ It uses the following
 * spring-boot with json(jackson) response
 * swagger for viewing
 * in memory database(h2)
+
 ## PATCH Example
-The following describes the and example flow on the HTTP Patch implemented here
+The following describes an example flow on the HTTP Patch implemented here
 ### Current JSON Model
 ```
 {
@@ -61,7 +62,8 @@ curl -X PATCH -H "Content-Type: application/json" -d '{
   ]
 }
 ```
----
+
+
 ## Usage
 1. Controller methods for PATCH should be annotated with @Patch where you can specify
     * id - type of id the entity used
